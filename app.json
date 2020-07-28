@@ -2,6 +2,7 @@
   "expo": {
     "name": "settai-fm",
     "slug": "settai-fm",
+    "description": "24 Hour Tamil Radio station with Crafted songs to suite the time & mood",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,8 +17,20 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+
+    "android": {
+      "package": "com.deemwar.settaifm",
+      "versionCode": 1
+    },
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.deemwar.settaifm",
+      "buildNumber": "1.0.0",
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
